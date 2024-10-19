@@ -12,3 +12,8 @@ print(B.T)
 C = A - tranA
 print(C)
 print(C.T)
+
+#
+A = np.array([[5,2,1],[3,6,4],[2,7,2]])
+A = ((A + A.T) + (A - A.T)) / 2
+print(A)
