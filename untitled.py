@@ -1,8 +1,5 @@
 import numpy as np
 
-A = np.array([[1, 2, 3],
-                   [4, 5, 6],
-                   [7, 8, 9]])
+A = np.array([[2,3], [3, -6]])
 
-A[:, [0,1]] = 2 * A[:, [0,1]]
-print(A)
+w, x = np.linalg.eig(A)
